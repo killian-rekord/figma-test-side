@@ -9,30 +9,55 @@
 </head>
 <body class="bg-paper text-ink">
 
-  <!-- ============ 1 · HEADER ============ -->
-  <header class="w-full border-b border-line bg-paper">
-    <div class="container-page flex items-center justify-between py-3">
-      <img src="assets/footer-logo.png" alt="REKORD" class="h-6 w-auto invert md:h-7" />
-      <nav class="hidden items-center gap-7 text-[14px] font-medium text-ink md:flex">
-        <a href="#modelle" class="hover:text-orange">Modelle</a>
-        <a href="#vergleich" class="hover:text-orange">Vergleich</a>
-        <a href="#konfigurator" class="hover:text-orange">Details</a>
-        <a href="#faq" class="hover:text-orange">FAQ</a>
-        <a href="#kontakt" class="hover:text-orange">Kontakt</a>
+  <!-- ============ 1 · HEADER (schlank, sticky) ============ -->
+  <header class="sticky top-0 z-50 w-full border-b border-line bg-paper/95 backdrop-blur transition-shadow" id="siteHeader">
+    <div class="container-page flex items-center justify-between gap-4 py-3">
+      <a href="https://www.rekord-fenster.com/" class="shrink-0" aria-label="REKORD Fenster Startseite">
+        <img src="assets/footer-logo.png" alt="REKORD" class="h-7 w-auto invert" />
+      </a>
+      <nav class="hidden items-center gap-5 text-[14px] font-medium text-ink lg:flex xl:gap-7">
+        <a href="https://www.rekord-fenster.com/ratgeber/" class="hover:text-orange">Ratgeber</a>
+        <a href="https://www.rekord-fenster.com/referenzen/" class="hover:text-orange">Galerie</a>
+        <a href="https://www.rekord-fenster.com/fenster/" class="hover:text-orange">Fenster</a>
+        <a href="https://www.rekord-fenster.com/balkontueren/" class="hover:text-orange">Balkontüren</a>
+        <a href="https://www.rekord-fenster.com/haustueren/" class="hover:text-orange">Haustüren</a>
+        <a href="https://www.rekord-fenster.com/sonnenschutz/" class="hover:text-orange">Sonnenschutz</a>
+        <a href="https://www.rekord-fenster.com/insektenschutz/" class="hover:text-orange">Insektenschutz</a>
+        <a href="https://www.rekord-fenster.com/standorte/" class="hover:text-orange">Standorte</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="#preisrechner" class="btn-green hidden sm:inline-flex">Preis berechnen <span aria-hidden="true">→</span></a>
-        <button type="button" class="md:hidden" aria-label="Menü öffnen" id="navToggle">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#241f1b" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <a href="https://preisrechner.rekord-fenster.com/" target="_blank" rel="noopener" class="hidden items-center gap-2 rounded-lg bg-orange px-4 py-2.5 text-[13px] font-semibold uppercase tracking-[0.5px] text-white transition-colors hover:bg-orange-dark sm:inline-flex">Preisrechner <span aria-hidden="true">→</span></a>
+        <button type="button" class="lg:hidden" aria-label="Menü öffnen" aria-expanded="false" id="navToggle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#241f1b" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
+    </div>
+
+    <!-- Mobile-Menü (Off-Canvas) -->
+    <div class="fixed inset-0 z-50 hidden lg:hidden" id="mobileMenu">
+      <div class="absolute inset-0 bg-ink/50" data-close-menu></div>
+      <nav class="absolute right-0 top-0 flex h-full w-[82%] max-w-[360px] flex-col gap-1 overflow-y-auto bg-paper p-6 shadow-2xl">
+        <div class="mb-4 flex items-center justify-between">
+          <img src="assets/footer-logo.png" alt="REKORD" class="h-6 w-auto invert" />
+          <button type="button" aria-label="Menü schließen" data-close-menu class="text-[28px] leading-none text-ink">&times;</button>
+        </div>
+        <a href="https://www.rekord-fenster.com/ratgeber/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Ratgeber</a>
+        <a href="https://www.rekord-fenster.com/referenzen/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Galerie</a>
+        <a href="https://www.rekord-fenster.com/fenster/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Fenster</a>
+        <a href="https://www.rekord-fenster.com/balkontueren/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Balkon-/Terrassentüren</a>
+        <a href="https://www.rekord-fenster.com/haustueren/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Haustüren</a>
+        <a href="https://www.rekord-fenster.com/sonnenschutz/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Sonnenschutz</a>
+        <a href="https://www.rekord-fenster.com/insektenschutz/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Insektenschutz</a>
+        <a href="https://www.rekord-fenster.com/standorte/" class="border-b border-line py-3 text-[16px] font-medium text-ink">Standorte</a>
+        <a href="https://preisrechner.rekord-fenster.com/" target="_blank" rel="noopener" class="btn-orange mt-5 w-full">Preisrechner <span aria-hidden="true">→</span></a>
+      </nav>
     </div>
   </header>
 
   <!-- ============ 2 · HERO ============ -->
   <section class="relative w-full overflow-hidden bg-paper">
     <img src="assets/hero-bg.svg" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full object-cover" />
-    <div class="container-page relative grid items-center gap-10 py-12 md:grid-cols-2 md:py-20">
+    <div class="container-page relative grid items-center gap-8 py-10 md:grid-cols-2 md:py-14">
       <div class="max-w-[560px]">
         <p class="eyebrow">PRODUKT-ÜBERSICHT</p>
         <h1 class="mt-3 text-[40px] font-extrabold uppercase leading-[1.05] tracking-[-1px] sm:text-[52px] lg:text-[64px]">
@@ -59,7 +84,7 @@
 
     <!-- 2b · WAS WIR BIETEN -->
     <div class="border-t border-line bg-white">
-      <div class="container-page grid items-center gap-10 py-14 md:grid-cols-2 md:py-20">
+      <div class="container-page grid items-center gap-8 py-12 md:grid-cols-2 md:py-16">
         <div>
           <h2 class="h2">WAS WIR <span class="text-orange">BIETEN</span></h2>
           <div class="mt-6 space-y-4 text-[18px] leading-[1.5] text-ink">
@@ -78,7 +103,7 @@
 
   <!-- ============ 3 · USP-BANNER ============ -->
   <section class="w-full bg-muted">
-    <div class="container-page flex flex-col gap-8 py-14 md:flex-row md:items-center md:justify-between md:py-24">
+    <div class="container-page flex flex-col gap-8 py-12 md:flex-row md:items-center md:justify-between md:py-16">
       <div class="md:w-[42%]">
         <h2 class="text-[32px] font-extrabold uppercase leading-[1.05] tracking-[-0.5px] md:text-[48px]">
           <span class="text-orange">DAS FENSTER</span><br />VON HIER<br /><span class="text-[22px] md:text-[32px]">ZUM REKORD-PREIS</span>
@@ -111,10 +136,10 @@
 
   <!-- ============ 4 · MODELL-ÜBERSICHT ============ -->
   <section id="modelle" class="w-full bg-paper">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">MODELL-ÜBERSICHT</p>
       <h2 class="mt-2 h2">UNSERE FENSTER</h2>
-      <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
         <!-- Karte BASE -->
         <article class="card flex flex-col overflow-hidden">
           <span class="m-4 mb-0 w-fit rounded-md bg-orange-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-orange-dark">Kunststoff</span>
@@ -182,7 +207,7 @@
 
   <!-- ============ 5 · VERGLEICHSTABELLE ============ -->
   <section id="vergleich" class="w-full bg-muted">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">SCHNELL-VERGLEICH</p>
       <h2 class="mt-2 h2">DIE 5 MODELLE IM DIREKTEN VERGLEICH</h2>
       <p class="mt-3 max-w-[640px] text-[16px] text-ink-body">Alle Werte auf einen Blick. Klassenbeste-Werte sind grün markiert.</p>
@@ -250,7 +275,7 @@
 
   <!-- ============ 6 · KONFIGURATOR (Akkordeon) ============ -->
   <section id="konfigurator" class="w-full bg-muted">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">DETAILS ZU DEINEM FENSTER</p>
       <h2 class="mt-2 h2">DEIN FENSTER IN ALLEN FACETTEN</h2>
 
@@ -334,28 +359,35 @@
     </div>
   </section>
 
-  <!-- ============ 7 · INNEN/AUSSEN-VERGLEICH ============ -->
+  <!-- ============ 7 · INNEN/AUSSEN-VERGLEICH (Josko-Slider) ============ -->
   <section class="w-full bg-paper">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">INNEN &amp; AUSSEN</p>
       <h2 class="mt-2 h2">SO SIEHT DEIN FENSTER AUS</h2>
 
-      <div class="mt-8 flex gap-6 border-b border-line text-[14px] font-bold uppercase tracking-[1px]" id="iaTabs">
-        <button type="button" class="ia-tab -mb-px border-b-2 border-ink pb-3 text-ink" data-tab="aussen">Aussen</button>
-        <button type="button" class="ia-tab -mb-px border-b-2 border-transparent pb-3 text-ink-mute" data-tab="innen">Innen</button>
+      <!-- Tabs: INNEN | AUSSEN (AUSSEN aktiv) -->
+      <div class="mt-8 flex border-b border-stroke text-[15px] uppercase tracking-[0.15px]" id="iaTabs">
+        <button type="button" class="ia-tab flex-1 border-b-2 border-transparent pb-3.5 pt-1 text-center font-normal text-ink-mute" data-tab="innen">Innen</button>
+        <button type="button" class="ia-tab flex-1 border-b-2 border-ink pb-3.5 pt-1 text-center font-semibold text-ink" data-tab="aussen">Aussen</button>
       </div>
 
+      <!-- Vergleichs-Bildbereich -->
       <div class="mt-8 select-none">
-        <div class="relative mx-auto aspect-[16/10] w-full max-w-[900px] overflow-hidden rounded-card border border-line" id="iaSlider">
+        <div class="relative h-[260px] w-full overflow-hidden rounded-[16px] sm:h-[320px] md:h-[360px]" id="iaSlider">
+          <!-- Basis rechts: Kunststoff-Alu -->
           <img src="assets/innenaussen-bauernhaus-lungau.png" alt="Kunststoff-Alu außen" class="absolute inset-0 h-full w-full object-cover" />
-          <div class="absolute inset-0 h-full w-full overflow-hidden" id="iaClip" style="width:50%">
-            <img src="assets/innenaussen-objekt-23.png" alt="Kunststoff außen" class="absolute inset-0 h-full w-full max-w-none object-cover" id="iaClipImg" />
-            <span class="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[1px] text-white">Kunststoff aussen</span>
+          <!-- Overlay links: Kunststoff (auf Reglerbreite geklippt) -->
+          <div class="absolute inset-y-0 left-0 overflow-hidden" id="iaClip" style="width:50%">
+            <img src="assets/innenaussen-objekt-23.png" alt="Kunststoff außen" class="absolute inset-y-0 left-0 h-full max-w-none object-cover" id="iaClipImg" />
           </div>
-          <span class="absolute right-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[1px] text-white">Kunststoff-Alu aussen</span>
-          <div class="absolute top-0 z-10 h-full w-0.5 bg-white" id="iaLine" style="left:50%">
-            <button type="button" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize" id="iaHandle" aria-label="Vergleich schieben">
-              <img src="assets/innenaussen-slider-handle.svg" alt="" class="h-12 w-12" />
+          <!-- Pills -->
+          <span class="absolute left-6 top-6 rounded-full bg-white px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.12px] text-ink shadow-[0px_2px_6px_rgba(0,0,0,0.12)]">Kunststoff aussen</span>
+          <span class="absolute right-6 top-6 rounded-full bg-white px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.12px] text-ink shadow-[0px_2px_6px_rgba(0,0,0,0.12)]">Kunststoff-Alu aussen</span>
+          <!-- Trennlinie + Griff -->
+          <div class="absolute inset-y-0 z-10 w-0.5 bg-white" id="iaLine" style="left:50%">
+            <button type="button" class="absolute left-1/2 top-1/2 flex h-[52px] w-[52px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center" id="iaHandle" aria-label="Vergleich schieben">
+              <img src="assets/innenaussen-slider-handle.svg" alt="" class="absolute inset-0 h-full w-full" />
+              <span class="relative text-[15px] font-bold leading-none text-white">‹&nbsp;›</span>
             </button>
           </div>
         </div>
@@ -363,18 +395,25 @@
     </div>
   </section>
 
-  <!-- ============ 8 · PREISRECHNER-BAND ============ -->
-  <section id="preisrechner" class="w-full bg-orange">
-    <a href="#kontakt" class="block"><img src="assets/band-preisrechner.png" alt="Preis berechnen" class="h-auto w-full" /></a>
+  <!-- ============ 8 · PREISRECHNER-CTA ============ -->
+  <section id="preisrechner" class="w-full bg-orange text-white">
+    <div class="container-page flex flex-col items-start gap-6 py-12 md:flex-row md:items-center md:justify-between md:py-16">
+      <div class="max-w-[680px]">
+        <p class="text-[13px] font-bold uppercase tracking-[2px] text-white/80">Preisrechner</p>
+        <h2 class="mt-2 text-[28px] font-extrabold leading-[1.1] md:text-[36px]">In wenigen Sekunden zu deinem Angebot</h2>
+        <p class="mt-3 text-[16px] leading-[1.5] text-white/90">Maße, Material, Farbe, Glas eingeben — und du bekommst aktuelle Angebote vom Standort in deiner Nähe.</p>
+      </div>
+      <a href="https://preisrechner.rekord-fenster.com/" target="_blank" rel="noopener" class="btn inline-flex shrink-0 rounded-lg bg-white px-7 py-4 text-[16px] text-orange shadow-[0px_2px_8px_rgba(0,0,0,0.15)] hover:bg-white/90">Jetzt berechnen <span aria-hidden="true">→</span></a>
+    </div>
   </section>
 
   <!-- ============ 9 · ENTSCHEIDUNGSHILFE KUNSTSTOFF / KUNSTSTOFF-ALU ============ -->
   <section class="w-full bg-muted">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">ENTSCHEIDUNGSHILFE</p>
       <h2 class="mt-2 h2">KUNSTSTOFF ODER KUNSTSTOFF-ALU — WAS IST DER UNTERSCHIED?</h2>
 
-      <div class="mt-10 grid gap-8 lg:grid-cols-2">
+      <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <!-- Kunststoff -->
         <div class="flex flex-col gap-5">
           <img src="assets/ksalu-kunststoff.png" alt="Kunststoff-Fenster" class="w-full rounded-[21px] object-cover" />
@@ -416,11 +455,11 @@
 
   <!-- ============ 10 · REFERENZEN ============ -->
   <section class="w-full bg-paper">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">AUS DER PRAXIS</p>
       <h2 class="mt-2 h2">KUNDENPROJEKTE AUS GANZ ÖSTERREICH</h2>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
         <article class="card flex flex-col overflow-hidden">
           <img src="assets/referenzen-stefan-stefanie.png" alt="Referenz Stefan &amp; Stefanie" class="aspect-[4/3] w-full object-cover" />
           <div class="flex flex-1 flex-col p-5">
@@ -452,7 +491,7 @@
 
   <!-- ============ 11 · DESIGN-VARIANTE ============ -->
   <section class="w-full bg-paper">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <div class="grid items-center gap-8 overflow-hidden rounded-card bg-panel p-8 md:grid-cols-2 md:p-12">
         <div>
           <p class="text-[13px] font-bold uppercase tracking-[2px] text-orange">Designorientierte Variante</p>
@@ -469,16 +508,21 @@
     </div>
   </section>
 
-  <!-- ============ 12 · PREISRECHNER-BAND 2 ============ -->
-  <section class="w-full bg-orange">
-    <a href="#kontakt" class="relative block">
-      <img src="assets/preisrechner-band-bg.png" alt="" aria-hidden="true" class="h-auto w-full" />
-    </a>
+  <!-- ============ 12 · PREISRECHNER-CTA 2 ============ -->
+  <section class="w-full bg-orange text-white">
+    <div class="container-page flex flex-col items-start gap-6 py-12 md:flex-row md:items-center md:justify-between md:py-16">
+      <div class="max-w-[680px]">
+        <p class="text-[13px] font-bold uppercase tracking-[2px] text-white/80">Preisrechner</p>
+        <h2 class="mt-2 text-[28px] font-extrabold leading-[1.1] md:text-[36px]">Konfigurieren und Richtpreis sofort sehen</h2>
+        <p class="mt-3 text-[16px] leading-[1.5] text-white/90">Stell dein Fenster in wenigen Sekunden zusammen — ganz ohne Termin und unverbindlich.</p>
+      </div>
+      <a href="https://preisrechner.rekord-fenster.com/" target="_blank" rel="noopener" class="btn inline-flex shrink-0 rounded-lg bg-white px-7 py-4 text-[16px] text-orange shadow-[0px_2px_8px_rgba(0,0,0,0.15)] hover:bg-white/90">Zum Preisrechner <span aria-hidden="true">→</span></a>
+    </div>
   </section>
 
   <!-- ============ 13 · FAQ (Akkordeon) ============ -->
   <section id="faq" class="w-full bg-panel">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">FAQ</p>
       <h2 class="mt-2 h2">HÄUFIGE FRAGEN</h2>
 
@@ -528,12 +572,12 @@
 
   <!-- ============ 15 · RATGEBER / MAGAZIN ============ -->
   <section class="w-full bg-muted">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <p class="eyebrow">WEITERLESEN</p>
       <h2 class="mt-2 h2">WISSEN DAS DEINE  ENTSCHIEDUNG LEICHTER MACHT.</h2>
       <p class="mt-3 max-w-[640px] text-[16px] text-ink-body">Drei kurze Lesetipps, bevor du das Konfigurieren startest. Das, was im Alltag den Unterschied macht.</p>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
         <article class="card flex flex-col overflow-hidden">
           <img src="assets/ratgeber-artikel-1.png" alt="" class="aspect-[3/2] w-full object-cover" />
           <div class="flex flex-1 flex-col p-5">
@@ -567,17 +611,17 @@
 
   <!-- ============ 16 · KONTAKT ============ -->
   <section id="kontakt" class="w-full bg-orange text-white">
-    <div class="container-page py-14 md:py-24">
+    <div class="container-page py-12 md:py-16">
       <div class="flex items-center gap-3 text-white/90">
-        <a href="#" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[15px] font-bold hover:bg-white/25">f</a>
-        <a href="#" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[12px] font-bold hover:bg-white/25">IG</a>
-        <a href="#" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[13px] hover:bg-white/25">▶</a>
+        <a href="https://www.facebook.com/rekordfenster/" target="_blank" rel="noopener" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[15px] font-bold hover:bg-white/25">f</a>
+        <a href="https://www.instagram.com/rekord_fenster_official" target="_blank" rel="noopener" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[12px] font-bold hover:bg-white/25">IG</a>
+        <a href="https://www.youtube.com/channel/UCQBOczZUg3SksmeHKp9eIYQ" target="_blank" rel="noopener" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[13px] hover:bg-white/25">▶</a>
       </div>
       <p class="mt-6 text-[13px] font-bold uppercase tracking-[2px] text-white/80">Wir sind da</p>
       <h2 class="mt-1 text-[40px] font-extrabold leading-none md:text-[56px]">Kontakt.</h2>
       <p class="mt-3 max-w-[520px] text-[16px] text-white/90">Drei Wege zu uns — wähle den, der dir am besten passt.</p>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
         <article class="flex flex-col rounded-card bg-white p-6 text-ink">
           <img src="assets/kontakt-icon-rueckruf.png" alt="" class="h-14 w-14" />
           <h3 class="mt-4 text-[20px] font-bold">Rückruf</h3>
@@ -613,25 +657,25 @@
           </div>
         </div>
         <nav class="text-[14px]"><ul class="space-y-2.5">
-          <li><a href="#" class="hover:text-white">Datenschutz</a></li>
-          <li><a href="#" class="hover:text-white">Impressum</a></li>
-          <li><a href="#" class="hover:text-white">Karriere</a></li>
-          <li><a href="#" class="hover:text-white">Partner werden</a></li>
+          <li><a href="https://www.rekord-fenster.com/datenschutzerklaerung/" class="hover:text-white">Datenschutz</a></li>
+          <li><a href="https://www.rekord-fenster.com/impressum/" class="hover:text-white">Impressum</a></li>
+          <li><a href="https://www.rekord-fenster.com/karriere/" class="hover:text-white">Karriere</a></li>
+          <li><a href="https://landing.rekord-fenster.com/partner-werden/" class="hover:text-white">Partner werden</a></li>
         </ul></nav>
         <nav class="text-[14px]"><ul class="space-y-2.5">
-          <li><a href="#" class="hover:text-white">Downloads</a></li>
-          <li><a href="#" class="hover:text-white">20 Jahre Hersteller-Garantie</a></li>
-          <li><a href="#" class="hover:text-white">CE-Unterlagen</a></li>
+          <li><a href="https://www.rekord-fenster.com/downloads/" class="hover:text-white">Downloads</a></li>
+          <li><a href="https://www.rekord-fenster.com/20-jahre-langzeit-garantie/" class="hover:text-white">20 Jahre Hersteller-Garantie</a></li>
+          <li><a href="https://www.rekord-fenster.com/ce-kennzeichen/" class="hover:text-white">CE-Unterlagen</a></li>
         </ul></nav>
         <nav class="text-[14px]"><ul class="space-y-2.5">
-          <li><a href="#" class="hover:text-white">Ratgeber</a></li>
-          <li><a href="#" class="hover:text-white">Galerie</a></li>
-          <li><a href="#" class="hover:text-white">Messen</a></li>
+          <li><a href="https://www.rekord-fenster.com/ratgeber/" class="hover:text-white">Ratgeber</a></li>
+          <li><a href="https://www.rekord-fenster.com/referenzen/" class="hover:text-white">Galerie</a></li>
+          <li><a href="https://www.rekord-fenster.com/messen/" class="hover:text-white">Messen</a></li>
         </ul></nav>
         <nav class="text-[14px]"><ul class="space-y-2.5">
-          <li><a href="#" class="hover:text-white">Standorte</a></li>
-          <li><a href="#" class="hover:text-white">Über unsere Fenster</a></li>
-          <li><a href="#" class="hover:text-white">Über unsere Leute</a></li>
+          <li><a href="https://www.rekord-fenster.com/standorte/" class="hover:text-white">Standorte</a></li>
+          <li><a href="https://www.rekord-fenster.com/ueber-unsere-fenster/" class="hover:text-white">Über unsere Fenster</a></li>
+          <li><a href="https://www.rekord-fenster.com/ueber-unsere-leute/" class="hover:text-white">Über unsere Leute</a></li>
         </ul></nav>
       </div>
       <div class="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-[13px] sm:flex-row sm:justify-between">

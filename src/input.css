@@ -19,9 +19,13 @@
 }
 
 @layer components {
-  /* Zentrierter Seiten-Container — Desktop max. 1440px, mit horizontaler Polsterung */
+  /* Zentrierter Seiten-Container — echter Figma-Content = 1200px */
   .container-page {
-    @apply mx-auto w-full max-w-container px-5 md:px-[120px];
+    @apply mx-auto w-full max-w-[1200px] px-5 md:px-8;
+  }
+  /* Sektions-Vertikalrhythmus aus Figma: Standard 64px (Ausnahmen inline) */
+  .section-pad {
+    @apply py-12 md:py-16;
   }
 
   /* Button-Varianten (Figma button-Tokens) */

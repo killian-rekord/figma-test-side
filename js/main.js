@@ -91,16 +91,18 @@
     var clipImg = document.getElementById("iaClipImg");
     var dragging = false;
 
+    // Overlay-Bild auf volle Frame-Breite fixieren, damit es beim Clippen deckungsgleich bleibt
+    function syncWidth() {
+      var rect = slider.getBoundingClientRect();
+      if (clipImg && rect.width) clipImg.style.width = rect.width + "px";
+    }
     function setPos(clientX) {
       var rect = slider.getBoundingClientRect();
       var pct = ((clientX - rect.left) / rect.width) * 100;
       pct = Math.max(0, Math.min(100, pct));
       clip.style.width = pct + "%";
       line.style.left = pct + "%";
-      // linkes Bild gegenläufig skalieren, damit es deckungsgleich bleibt
-      if (clipImg && rect.width) {
-        clipImg.style.width = rect.width + "px";
-      }
+      syncWidth();
     }
 
     function start(e) {
@@ -128,20 +130,40 @@
       if (e.target.closest("#iaHandle")) return;
       setPos(e.clientX);
     });
-    // initiale Bildbreite setzen
-    window.addEventListener("load", function () {
-      var rect = slider.getBoundingClientRect();
-      if (clipImg) clipImg.style.width = rect.width + "px";
+    // Bildbreite initial + bei Resize synchronisieren
+    syncWidth();
+    window.addEventListener("load", syncWidth);
+    window.addEventListener("resize", syncWidth);
+  }
+
+  /* ---------- 5 · Mobile-Navigation (Off-Canvas) ---------- */
+  var navToggle = document.getElementById("navToggle");
+  var mobileMenu = document.getElementById("mobileMenu");
+  if (navToggle && mobileMenu) {
+    function openMenu() {
+      mobileMenu.classList.remove("hidden");
+      navToggle.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    }
+    function closeMenu() {
+      mobileMenu.classList.add("hidden");
+      navToggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+    navToggle.addEventListener("click", openMenu);
+    mobileMenu.querySelectorAll("[data-close-menu], a").forEach(function (el) {
+      el.addEventListener("click", closeMenu);
     });
   }
 
-  /* ---------- 5 · Mobile-Navigation (einfacher Anker-Toggle) ---------- */
-  var navToggle = document.getElementById("navToggle");
-  if (navToggle) {
-    navToggle.addEventListener("click", function () {
-      // einfaches Verhalten: zum Kontakt scrollen (Platzhalter für späteres Off-Canvas-Menü)
-      var nav = document.querySelector("header nav");
-      if (nav) nav.classList.toggle("hidden");
-    });
+  /* ---------- 6 · Sticky-Header Schatten beim Scrollen ---------- */
+  var header = document.getElementById("siteHeader");
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 8) header.classList.add("shadow-md");
+      else header.classList.remove("shadow-md");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
 })();
