@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunststoff- &amp; Kunststoff-Alu-Fenster | REKORD</title>
+  <meta name="description" content="Welche Fensterlösung passt zu deinem Zuhause und deinem Budget? Vom günstigen Einstieg bis passivhaustauglich. Regional in Österreich produziert, ab 9 Tagen ab Werk, 20 Jahre Garantie." />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="bg-paper text-ink">
+
+  <!-- ============ 1 · HEADER ============ -->
+  <header class="w-full border-b border-line bg-paper">
+    <div class="container-page flex items-center justify-between py-3">
+      <img src="assets/footer-logo.png" alt="REKORD" class="h-6 w-auto invert md:h-7" />
+      <nav class="hidden items-center gap-7 text-[14px] font-medium text-ink md:flex">
+        <a href="#modelle" class="hover:text-orange">Modelle</a>
+        <a href="#vergleich" class="hover:text-orange">Vergleich</a>
+        <a href="#konfigurator" class="hover:text-orange">Details</a>
+        <a href="#faq" class="hover:text-orange">FAQ</a>
+        <a href="#kontakt" class="hover:text-orange">Kontakt</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#preisrechner" class="btn-green hidden sm:inline-flex">Preis berechnen <span aria-hidden="true">→</span></a>
+        <button type="button" class="md:hidden" aria-label="Menü öffnen" id="navToggle">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#241f1b" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 2 · HERO ============ -->
+  <section class="relative w-full overflow-hidden bg-paper">
+    <img src="assets/hero-bg.svg" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full object-cover" />
+    <div class="container-page relative grid items-center gap-10 py-12 md:grid-cols-2 md:py-20">
+      <div class="max-w-[560px]">
+        <p class="eyebrow">PRODUKT-ÜBERSICHT</p>
+        <h1 class="mt-3 text-[40px] font-extrabold uppercase leading-[1.05] tracking-[-1px] sm:text-[52px] lg:text-[64px]">
+          Kunststoff- &amp;<br /><span class="text-orange">Kunststoff-Alu-<br />Fenster</span>
+        </h1>
+        <p class="mt-6 max-w-[520px] text-[16px] leading-[1.55] text-ink-body">
+          Welche Fensterlösung passt zu deinem Zuhause und deinem Budget? Vom günstigen Einstieg bis passivhaustauglich. Der Unterschied liegt außen bei der Alu-Schale.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-2">
+          <span class="pill">Preis-Leistungs-Testsieger</span>
+          <span class="pill">Regional</span>
+          <span class="pill">20 Jahre Garantie</span>
+          <span class="pill">ab 9 Tagen ab Werk</span>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#preisrechner" class="btn-orange">Preis berechnen <span aria-hidden="true">→</span></a>
+          <a href="#kontakt" class="btn-ghost">Beratung anfragen</a>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/hero-fenster.png" alt="Kunststoff-Alu-Fenster von REKORD" class="w-full max-w-[540px] object-contain drop-shadow-xl" />
+      </div>
+    </div>
+
+    <!-- 2b · WAS WIR BIETEN -->
+    <div class="border-t border-line bg-white">
+      <div class="container-page grid items-center gap-10 py-14 md:grid-cols-2 md:py-20">
+        <div>
+          <h2 class="h2">WAS WIR <span class="text-orange">BIETEN</span></h2>
+          <div class="mt-6 space-y-4 text-[18px] leading-[1.5] text-ink">
+            <p>REKORD bietet Kunststoff-Fenster und Kunststoff-Alu-Fenster in mehreren Ausführungen — vom günstigen BASE bis zum preiswerten PRO.</p>
+            <p>Kunststoff-Fenster sind die günstige Wahl, Kunststoff-Alu-Fenster haben außen eine wetterfeste Alu-Schale und sind besonders pflegeleicht.</p>
+            <p>Wärmedämmung Uw 0,85–0,73 W/m²K, Schallschutz 34–39 dB. Regional in Österreich an 9 REKORD-Standorten produziert, ab 9 Tagen ab Werk, 20 Jahre Garantie.</p>
+          </div>
+        </div>
+        <div class="flex h-[306px] items-center justify-center overflow-hidden rounded-card bg-neutral2 text-[14px] text-ink-soft shadow-card">
+          <!-- In Figma ist hier ein Platzhalter (Esszimmer_V1) ohne hinterlegtes Bild — bitte Foto einsetzen -->
+          Esszimmer-Foto
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · USP-BANNER ============ -->
+  <section class="w-full bg-muted">
+    <div class="container-page flex flex-col gap-8 py-14 md:flex-row md:items-center md:justify-between md:py-24">
+      <div class="md:w-[42%]">
+        <h2 class="text-[32px] font-extrabold uppercase leading-[1.05] tracking-[-0.5px] md:text-[48px]">
+          <span class="text-orange">DAS FENSTER</span><br />VON HIER<br /><span class="text-[22px] md:text-[32px]">ZUM REKORD-PREIS</span>
+        </h2>
+        <a href="#showroom" class="mt-5 inline-flex items-center gap-3 text-[13px] font-semibold tracking-[0.3px] text-ink hover:text-orange">
+          <img src="assets/arrow.svg" alt="" class="w-[86px]" aria-hidden="true" />
+          Zum nächsten Standort
+        </a>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:w-[55%]">
+        <div class="flex items-center gap-3.5 rounded-card bg-white px-5 py-4 shadow-card">
+          <img src="assets/usp-regional.png" alt="" class="h-10 w-auto shrink-0" />
+          <div><p class="text-[15px] font-bold tracking-[0.3px]">REGIONAL</p><p class="text-[13px] leading-[1.4] text-ink-soft">in Österreich produziert</p></div>
+        </div>
+        <div class="flex items-center gap-3.5 rounded-card bg-white px-5 py-4 shadow-card">
+          <img src="assets/usp-tage.png" alt="" class="h-8 w-auto shrink-0" />
+          <div><p class="text-[15px] font-bold tracking-[0.3px]">AB 9 TAGEN</p><p class="text-[13px] leading-[1.4] text-ink-soft">ab Werk</p></div>
+        </div>
+        <div class="flex items-center gap-3.5 rounded-card bg-white px-5 py-4 shadow-card">
+          <img src="assets/usp-garantie.png" alt="" class="h-11 w-auto shrink-0" />
+          <div><p class="text-[15px] font-bold tracking-[0.3px]">20 JAHRE GARANTIE</p><p class="text-[13px] leading-[1.4] text-ink-soft">Hersteller-Garantie</p></div>
+        </div>
+        <div class="flex items-center gap-3.5 rounded-card bg-white px-5 py-4 shadow-card">
+          <img src="assets/usp-testsieger.png" alt="" class="h-9 w-auto shrink-0" />
+          <div><p class="text-[15px] font-bold tracking-[0.3px]">3× TESTSIEGER</p><p class="text-[13px] leading-[1.4] text-ink-soft">Preis-Leistungs-Testsieger</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · MODELL-ÜBERSICHT ============ -->
+  <section id="modelle" class="w-full bg-paper">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">MODELL-ÜBERSICHT</p>
+      <h2 class="mt-2 h2">UNSERE FENSTER</h2>
+      <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <!-- Karte BASE -->
+        <article class="card flex flex-col overflow-hidden">
+          <span class="m-4 mb-0 w-fit rounded-md bg-orange-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-orange-dark">Kunststoff</span>
+          <div class="flex h-[160px] items-center justify-center bg-[#f9f9f9] p-4"><img src="assets/modelle-base-foto.png" alt="BASE Fenster" class="max-h-full w-auto object-contain" /></div>
+          <div class="flex flex-1 flex-col p-5 pt-4">
+            <h3 class="text-[20px] font-bold">BASE</h3>
+            <p class="text-[14px] font-semibold text-orange">Günstiges Modell</p>
+            <div class="mt-3 flex flex-wrap gap-1.5"><span class="spec">Uw 0,85</span><span class="spec">34 dB</span><span class="spec">3-fach</span></div>
+            <div class="mt-auto pt-5"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca*</p><p class="text-[28px] font-extrabold leading-none">400 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+            <a href="#preisrechner" class="btn-green mt-4 w-full">Preis berechnen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <!-- Karte PRO -->
+        <article class="card flex flex-col overflow-hidden">
+          <span class="m-4 mb-0 w-fit rounded-md bg-orange-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-orange-dark">Kunststoff</span>
+          <div class="flex h-[160px] items-center justify-center bg-[#f9f9f9] p-4"><img src="assets/modelle-pro-foto.png" alt="PRO Fenster" class="max-h-full w-auto object-contain" /></div>
+          <div class="flex flex-1 flex-col p-5 pt-4">
+            <h3 class="text-[20px] font-bold">PRO</h3>
+            <p class="text-[14px] font-semibold text-orange">Passivhaustauglich</p>
+            <div class="mt-3 flex flex-wrap gap-1.5"><span class="spec">Uw 0,73</span><span class="spec">35 dB</span><span class="spec">3-fach</span></div>
+            <div class="mt-auto pt-5"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca*</p><p class="text-[28px] font-extrabold leading-none">460 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+            <a href="#preisrechner" class="btn-green mt-4 w-full">Preis berechnen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <!-- Karte BASE Alu -->
+        <article class="card flex flex-col overflow-hidden">
+          <span class="m-4 mb-0 w-fit rounded-md bg-[#e9eaec] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-ink-soft">Kunststoff-Alu</span>
+          <div class="flex h-[160px] items-center justify-center bg-[#f9f9f9] p-4"><img src="assets/modelle-base-alu-foto.png" alt="BASE Alu Fenster" class="max-h-full w-auto object-contain" /></div>
+          <div class="flex flex-1 flex-col p-5 pt-4">
+            <h3 class="text-[20px] font-bold">BASE Alu</h3>
+            <p class="text-[14px] font-semibold text-orange">Günstig + Alu-Schale</p>
+            <div class="mt-3 flex flex-wrap gap-1.5"><span class="spec">Uw 0,85</span><span class="spec">34 dB</span><span class="spec">3-fach</span></div>
+            <div class="mt-auto pt-5"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca*</p><p class="text-[28px] font-extrabold leading-none">550 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+            <a href="#preisrechner" class="btn-green mt-4 w-full">Preis berechnen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <!-- Karte PRO Alu -->
+        <article class="card flex flex-col overflow-hidden">
+          <span class="m-4 mb-0 w-fit rounded-md bg-[#e9eaec] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-ink-soft">Kunststoff-Alu</span>
+          <div class="flex h-[160px] items-center justify-center bg-[#f9f9f9] p-4"><img src="assets/modelle-pro-alu-foto.png" alt="PRO Alu Fenster" class="max-h-full w-auto object-contain" /></div>
+          <div class="flex flex-1 flex-col p-5 pt-4">
+            <h3 class="text-[20px] font-bold">PRO Alu</h3>
+            <p class="text-[14px] font-semibold text-orange">Passivhaus + Alu</p>
+            <div class="mt-3 flex flex-wrap gap-1.5"><span class="spec">Uw 0,73</span><span class="spec">35 dB</span><span class="spec">3-fach</span></div>
+            <div class="mt-auto pt-5"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca*</p><p class="text-[28px] font-extrabold leading-none">600 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+            <a href="#preisrechner" class="btn-green mt-4 w-full">Preis berechnen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <!-- Karte PRO Alu Verbund -->
+        <article class="card flex flex-col overflow-hidden">
+          <span class="m-4 mb-0 w-fit rounded-md bg-[#e9eaec] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[1px] text-ink-soft">Kunststoff-Alu</span>
+          <div class="flex h-[160px] items-center justify-center bg-[#f9f9f9] p-4"><img src="assets/modelle-pro-alu-verbund-foto.png" alt="PRO Alu Verbund Fenster" class="max-h-full w-auto object-contain" /></div>
+          <div class="flex flex-1 flex-col p-5 pt-4">
+            <h3 class="text-[20px] font-bold">PRO Alu Verbund</h3>
+            <p class="text-[14px] font-semibold text-orange">Mit Sonnenschutz</p>
+            <div class="mt-3 flex flex-wrap gap-1.5"><span class="spec">Uw 0,76</span><span class="spec">39 dB</span><span class="spec">4-fach</span></div>
+            <div class="mt-auto pt-5"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca*</p><p class="text-[28px] font-extrabold leading-none">1300 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+            <a href="#preisrechner" class="btn-green mt-4 w-full">Preis berechnen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="mt-6 text-[12px] text-ink-soft">*bei einem Fenster von 100 × 130cm</p>
+    </div>
+  </section>
+
+  <!-- ============ 5 · VERGLEICHSTABELLE ============ -->
+  <section id="vergleich" class="w-full bg-muted">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">SCHNELL-VERGLEICH</p>
+      <h2 class="mt-2 h2">DIE 5 MODELLE IM DIREKTEN VERGLEICH</h2>
+      <p class="mt-3 max-w-[640px] text-[16px] text-ink-body">Alle Werte auf einen Blick. Klassenbeste-Werte sind grün markiert.</p>
+
+      <div class="mt-8 overflow-x-auto rounded-card border border-line bg-white">
+        <table class="w-full min-w-[820px] border-collapse text-left text-[14px]">
+          <thead>
+            <tr class="bg-muted">
+              <th class="p-4 align-bottom text-[12px] font-semibold uppercase tracking-[1px] text-ink-soft">Modell</th>
+              <th class="border-l border-line p-4 align-bottom">
+                <span class="mb-1 block w-fit rounded bg-orange-soft px-2 py-0.5 text-[10px] font-bold uppercase text-orange-dark">Kunststoff</span>
+                <span class="block text-[15px] font-bold">BASE</span><span class="text-[12px] text-ink-soft">ab CA* </span><span class="font-bold text-orange-dark">400 €</span>
+              </th>
+              <th class="border-l border-line p-4 align-bottom">
+                <span class="mb-1 block w-fit rounded bg-orange-soft px-2 py-0.5 text-[10px] font-bold uppercase text-orange-dark">Kunststoff</span>
+                <span class="block text-[15px] font-bold">PRO</span><span class="text-[12px] text-ink-soft">ab CA* </span><span class="font-bold text-orange-dark">460 €</span>
+              </th>
+              <th class="border-l border-line p-4 align-bottom">
+                <span class="mb-1 block w-fit rounded bg-[#e9eaec] px-2 py-0.5 text-[10px] font-bold uppercase text-ink-soft">Kunststoff-Alu</span>
+                <span class="block text-[15px] font-bold">BASE Alu</span><span class="text-[12px] text-ink-soft">ab CA* </span><span class="font-bold text-orange-dark">550 €</span>
+              </th>
+              <th class="border-l border-line p-4 align-bottom">
+                <span class="mb-1 block w-fit rounded bg-[#e9eaec] px-2 py-0.5 text-[10px] font-bold uppercase text-ink-soft">Kunststoff-Alu</span>
+                <span class="block text-[15px] font-bold">PRO Alu</span><span class="text-[12px] text-ink-soft">ab CA* </span><span class="font-bold text-orange-dark">600 €</span>
+              </th>
+              <th class="border-l border-line p-4 align-bottom">
+                <span class="mb-1 block w-fit rounded bg-[#e9eaec] px-2 py-0.5 text-[10px] font-bold uppercase text-ink-soft">Kunststoff-Alu</span>
+                <span class="block text-[15px] font-bold">PRO Alu Verbund</span><span class="text-[12px] text-ink-soft">ab CA* </span><span class="font-bold text-orange-dark">1.300 €</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="[&_td]:border-t [&_td]:border-line [&_td]:p-4">
+            <tr>
+              <td class="font-semibold"><span class="inline-flex items-center gap-2"><img src="assets/vergleich-icon-uw.svg" alt="" class="h-5 w-5" />Wärmedämmung</span></td>
+              <td>0,85 W/m²K</td>
+              <td class="bg-best-bg font-bold text-best-text">0,73 W/m²K <span class="block text-[11px]">★ Klassenbeste</span></td>
+              <td>0,85 W/m²K</td>
+              <td class="bg-best-bg font-bold text-best-text">0,73 W/m²K <span class="block text-[11px]">★ Klassenbeste</span></td>
+              <td>0,76 W/m²K</td>
+            </tr>
+            <tr>
+              <td class="font-semibold"><span class="inline-flex items-center gap-2"><img src="assets/vergleich-icon-schallschutz.svg" alt="" class="h-5 w-5" />Schallschutz</span></td>
+              <td>34 dB</td><td>35 dB</td><td>34 dB</td><td>35 dB</td>
+              <td class="bg-best-bg font-bold text-best-text">39 dB <span class="block text-[11px]">★ Klassenbeste</span></td>
+            </tr>
+            <tr>
+              <td class="font-semibold"><span class="inline-flex items-center gap-2"><img src="assets/vergleich-icon-verglasung.svg" alt="" class="h-5 w-5" />Verglasung</span></td>
+              <td>3-fach</td><td>3-fach</td><td>3-fach</td><td>3-fach</td>
+              <td class="bg-best-bg font-bold text-best-text">4-fach <span class="block text-[11px]">★ Klassenbeste</span></td>
+            </tr>
+            <tr>
+              <td class="font-semibold align-top"><span class="inline-flex items-center gap-2"><img src="assets/vergleich-icon-besonderheit.svg" alt="" class="h-5 w-5" />Besonderheiten</span></td>
+              <td class="align-top text-ink-soft">Sanierung mit kleinem Budget</td>
+              <td class="align-top text-ink-soft">bei Neubau oder Passivhaus</td>
+              <td class="align-top text-ink-soft">Bei geringeren Budget mit wetterfester Alu-Schale</td>
+              <td class="align-top text-ink-soft">bei Neubau mit wetterfester Alu-Schale</td>
+              <td class="align-top text-ink-soft">bei Sanierung inklusive Sonnenschutz</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-[12px] text-ink-soft">Uw in W/m²K · alle Preise inkl. MwSt. *bei einem Fenster von 100 × 130cm</p>
+    </div>
+  </section>
+
+  <!-- ============ 6 · KONFIGURATOR (Akkordeon) ============ -->
+  <section id="konfigurator" class="w-full bg-muted">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">DETAILS ZU DEINEM FENSTER</p>
+      <h2 class="mt-2 h2">DEIN FENSTER IN ALLEN FACETTEN</h2>
+
+      <div class="mt-8 divide-y divide-line overflow-hidden rounded-card border border-line bg-white" data-accordion>
+        <!-- Farben -->
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span class="text-[18px] font-bold md:text-[20px]">Farben</span><span class="acc-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel"><div class="acc-inner" id="farbenPanel">
+            <p class="mb-5 max-w-[700px] text-[14px] text-ink-soft">Innen standardmäßig Weiß. Kunststoff-Alu zusätzlich außen in 12 Farben (auch Metallic). Folierung in vielen weiteren Dekoren möglich.</p>
+            <!-- Swatch-Gruppen werden per JS aus js/main.js gerendert -->
+          </div></div>
+        </div>
+        <!-- Griffe -->
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span class="text-[18px] font-bold md:text-[20px]">Griffe</span><span class="acc-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel"><div class="acc-inner">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <figure class="card overflow-hidden"><img src="assets/konfig-griff-alu.png" alt="" class="aspect-[376/220] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Fenstergriff Alu</p><p class="text-[12px] text-ink-soft">Hochwertiger Griff in Alu-Optik</p></figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-griff-kunststoff.png" alt="" class="aspect-[376/220] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Kunststoff-Fenstergriff</p><p class="text-[12px] text-ink-soft">Standardgriff in Weiß</p></figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-griff-versperrbar.png" alt="" class="aspect-[376/220] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Versperrbarer Fenstergriff</p><p class="text-[12px] text-ink-soft">Mehr Sicherheit per Schlüssel</p></figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-griff-druckknopf.png" alt="" class="aspect-[376/220] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Fenstergriff mit Druckknopf</p><p class="text-[12px] text-ink-soft">Kindersicherung per Knopfdruck</p></figcaption></figure>
+            </div>
+          </div></div>
+        </div>
+        <!-- Glasarten -->
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span class="text-[18px] font-bold md:text-[20px]">Glasarten</span><span class="acc-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel"><div class="acc-inner">
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-uadi-weiss.png" alt="" class="aspect-[196/150] w-full object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Uadi Weiß</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-satinato-weiss.png" alt="" class="aspect-[196/150] w-full bg-neutral2 object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Satinato Weiß</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-pave-weiss.png" alt="" class="aspect-[196/150] w-full bg-neutral2 object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Pave Weiß</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-ornament-504.png" alt="" class="aspect-[196/150] w-full object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Ornament 504</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-kathedral.png" alt="" class="aspect-[196/150] w-full object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Kathedral</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-chinchilla-weiss.png" alt="" class="aspect-[196/150] w-full object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Chinchilla Weiß</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-glas-altdeutsch-k-weiss.png" alt="" class="aspect-[196/150] w-full object-cover" /><figcaption class="p-2 text-center text-[12px] font-medium">Altdeutsch K Weiß</figcaption></figure>
+            </div>
+          </div></div>
+        </div>
+        <!-- Fenstersprossen -->
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span class="text-[18px] font-bold md:text-[20px]">Fenstersprossen</span><span class="acc-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel"><div class="acc-inner">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <figure class="card overflow-hidden"><img src="assets/konfig-sprosse-klebesprossen.png" alt="" class="aspect-[264/180] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Klebesprossen</p><p class="text-[12px] text-ink-soft">Aufgeklebt, günstig &amp; pflegeleicht</p></figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-sprosse-glassprossen.png" alt="" class="aspect-[264/180] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Glassprossen</p><p class="text-[12px] text-ink-soft">Im Scheibenzwischenraum</p></figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-sprosse-messingsprossen.png" alt="" class="aspect-[264/180] w-full object-cover" /><figcaption class="p-3"><p class="text-[14px] font-bold">Messingsprossen</p><p class="text-[12px] text-ink-soft">Echte, durchgehende Sprossen</p></figcaption></figure>
+            </div>
+          </div></div>
+        </div>
+        <!-- Aufbau im Schnitt -->
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false">
+            <span class="text-[18px] font-bold md:text-[20px]">Aufbau im Schnitt — Kunststoff vs. Kunststoff-Alu</span><span class="acc-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel"><div class="acc-inner">
+            <p class="mb-6 max-w-[760px] text-[14px] text-ink-soft">Innen dämmt bei beiden der Kunststoff. Der Unterschied liegt außen — die Alu-Schale macht das Fenster besonders pflegeleicht und wetterfest. Die Schnitte zeigen den Aufbau im Vergleich.</p>
+            <p class="mb-3 text-[12px] font-bold uppercase tracking-[1px] text-ink-soft">Kunststoff</p>
+            <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ks-base-76mm.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">BASE · 76 mm</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ks-pro-88mm.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">PRO · 88 mm</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ks-design.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">DESIGN</figcaption></figure>
+            </div>
+            <p class="mb-3 text-[12px] font-bold uppercase tracking-[1px] text-ink-soft">Kunststoff-Alu</p>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ksalu-base-alu.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">BASE Alu</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ksalu-pro-alu.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">PRO Alu</figcaption></figure>
+              <figure class="card overflow-hidden"><img src="assets/konfig-schnitt-ksalu-pro-alu-verbund.png" alt="" class="aspect-square w-full object-cover" /><figcaption class="p-3 text-[14px] font-bold">PRO Alu Verbund</figcaption></figure>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · INNEN/AUSSEN-VERGLEICH ============ -->
+  <section class="w-full bg-paper">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">INNEN &amp; AUSSEN</p>
+      <h2 class="mt-2 h2">SO SIEHT DEIN FENSTER AUS</h2>
+
+      <div class="mt-8 flex gap-6 border-b border-line text-[14px] font-bold uppercase tracking-[1px]" id="iaTabs">
+        <button type="button" class="ia-tab -mb-px border-b-2 border-ink pb-3 text-ink" data-tab="aussen">Aussen</button>
+        <button type="button" class="ia-tab -mb-px border-b-2 border-transparent pb-3 text-ink-mute" data-tab="innen">Innen</button>
+      </div>
+
+      <div class="mt-8 select-none">
+        <div class="relative mx-auto aspect-[16/10] w-full max-w-[900px] overflow-hidden rounded-card border border-line" id="iaSlider">
+          <img src="assets/innenaussen-bauernhaus-lungau.png" alt="Kunststoff-Alu außen" class="absolute inset-0 h-full w-full object-cover" />
+          <div class="absolute inset-0 h-full w-full overflow-hidden" id="iaClip" style="width:50%">
+            <img src="assets/innenaussen-objekt-23.png" alt="Kunststoff außen" class="absolute inset-0 h-full w-full max-w-none object-cover" id="iaClipImg" />
+            <span class="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[1px] text-white">Kunststoff aussen</span>
+          </div>
+          <span class="absolute right-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[1px] text-white">Kunststoff-Alu aussen</span>
+          <div class="absolute top-0 z-10 h-full w-0.5 bg-white" id="iaLine" style="left:50%">
+            <button type="button" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize" id="iaHandle" aria-label="Vergleich schieben">
+              <img src="assets/innenaussen-slider-handle.svg" alt="" class="h-12 w-12" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · PREISRECHNER-BAND ============ -->
+  <section id="preisrechner" class="w-full bg-orange">
+    <a href="#kontakt" class="block"><img src="assets/band-preisrechner.png" alt="Preis berechnen" class="h-auto w-full" /></a>
+  </section>
+
+  <!-- ============ 9 · ENTSCHEIDUNGSHILFE KUNSTSTOFF / KUNSTSTOFF-ALU ============ -->
+  <section class="w-full bg-muted">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">ENTSCHEIDUNGSHILFE</p>
+      <h2 class="mt-2 h2">KUNSTSTOFF ODER KUNSTSTOFF-ALU — WAS IST DER UNTERSCHIED?</h2>
+
+      <div class="mt-10 grid gap-8 lg:grid-cols-2">
+        <!-- Kunststoff -->
+        <div class="flex flex-col gap-5">
+          <img src="assets/ksalu-kunststoff.png" alt="Kunststoff-Fenster" class="w-full rounded-[21px] object-cover" />
+          <div>
+            <h3 class="text-[24px] font-bold text-orange-dark">Kunststoff-Fenster</h3>
+            <p class="mt-2 text-[16px] leading-[1.5] text-ink-body">Rundum ein Rahmen aus Kunststoff (PVC). Die günstige Wahl — pflegeleicht, gut gedämmt, viele Farben innen &amp; außen per Folierung. BASE Kunststoff bei knappen Budget oder PRO bei Neubau oder Passivhaus.</p>
+            <p class="mt-3 text-[15px] font-semibold text-ink">→ wenn der Preis zählt</p>
+            <p class="mt-1 text-[13px] text-ink-soft">Modelle: BASE · PRO</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">knappes Budget</span>
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">Sanierer</span>
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">Kunststoff</span>
+            </div>
+          </div>
+        </div>
+        <!-- Kunststoff-Alu -->
+        <div class="flex flex-col gap-5">
+          <img src="assets/ksalu-kunststoff-alu.png" alt="Kunststoff-Alu-Fenster" class="w-full rounded-[22px] object-cover" />
+          <div>
+            <h3 class="text-[24px] font-bold text-orange-dark">Kunststoff-Alu-Fenster</h3>
+            <p class="mt-2 text-[16px] leading-[1.5] text-ink-body">Kunststoff innen, außen zusätzlich eine Aluminium-Schale. Besonders pflegeleicht, wetterfest und in 12 Farben außen (auch Metallic). BASE ALU günstige Variante (mit wetterfester Alu-Schale). PRO Alu bei Neubau (Uw 0,73 W/m²K, passivhaustauglich). PRO Alu Verbund integrierter Sonnenschutz und Vierfachverglasung. DESIGN flächenbündiger Rahmen (siehe unten)</p>
+            <p class="mt-3 text-[15px] font-semibold text-ink">→ wenn einfache Pflege &amp; Farbe außen zählen</p>
+            <p class="mt-1 text-[13px] text-ink-soft">Modelle: BASE Alu · PRO Alu · PRO Alu Verbund · DESIGN Alu</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">integrierter Sonnenschutz möglich</span>
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">pflegeleicht</span>
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">ALU-Schale</span>
+              <span class="rounded-lg bg-neutral2 px-3 py-1.5 text-[13px] text-ink-body">modernes Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 rounded-card bg-neutral2 p-5 text-[15px] text-ink-body">
+        <strong class="text-ink">Kurz gemerkt:</strong> Innen dämmt bei beiden der Kunststoff. Der Unterschied liegt außen — die Alu-Schale. · Echtholz innen? Schau dir Holz-Alu (NATURAL/ROYAL) an.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 · REFERENZEN ============ -->
+  <section class="w-full bg-paper">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">AUS DER PRAXIS</p>
+      <h2 class="mt-2 h2">KUNDENPROJEKTE AUS GANZ ÖSTERREICH</h2>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/referenzen-stefan-stefanie.png" alt="Referenz Stefan &amp; Stefanie" class="aspect-[4/3] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <span class="text-[11px] font-bold uppercase tracking-[1px] text-orange">Kunststoff-Alu PRO · Sanierung</span>
+            <p class="mt-3 flex-1 text-[16px] leading-[1.5] text-ink">„Die Aluschale außen ist besonders pflegeleicht, nur einmal drüber wischen und fertig."</p>
+            <p class="mt-4 text-[14px] font-semibold text-ink-soft">— Stefan &amp; Stefanie, Steiermark</p>
+          </div>
+        </article>
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/referenzen-bettina.png" alt="Referenz Bettina Stromberger" class="aspect-[4/3] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <span class="text-[11px] font-bold uppercase tracking-[1px] text-orange">Kunststoff-Fenster BASE · Sanierung</span>
+            <p class="mt-3 flex-1 text-[16px] leading-[1.5] text-ink">„Gute Kunststoff-Fenster mit dem günstigsten Preis."</p>
+            <p class="mt-4 text-[14px] font-semibold text-ink-soft">— Bettina Stromberger, Kärnten</p>
+          </div>
+        </article>
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/referenzen-pia.png" alt="Referenz Pia Pajer" class="aspect-[4/3] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <span class="text-[11px] font-bold uppercase tracking-[1px] text-orange">Kunststoff-Alu BASE · Sanierung</span>
+            <p class="mt-3 flex-1 text-[16px] leading-[1.5] text-ink">„Kunststoff-Alu-Fenster in Holzoptik Bergkiefer. Schauen aus wie echte Holz-Fenster. Super Einbau."</p>
+            <p class="mt-4 text-[14px] font-semibold text-ink-soft">— Pia Pajer, Kärnten</p>
+          </div>
+        </article>
+      </div>
+      <div class="mt-8"><a href="#" class="btn-ghost">Mehr Referenzen ansehen <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ============ 11 · DESIGN-VARIANTE ============ -->
+  <section class="w-full bg-paper">
+    <div class="container-page py-14 md:py-24">
+      <div class="grid items-center gap-8 overflow-hidden rounded-card bg-panel p-8 md:grid-cols-2 md:p-12">
+        <div>
+          <p class="text-[13px] font-bold uppercase tracking-[2px] text-orange">Designorientierte Variante</p>
+          <h2 class="mt-3 text-[28px] font-extrabold leading-[1.1] md:text-[36px]">DESIGN — flächenbündig und hochmodern.</h2>
+          <p class="mt-4 max-w-[480px] text-[16px] leading-[1.5] text-ink-body">Ergänzend zum 5er-Sortiment: Wenn die Optik im Vordergrund steht, gibt es das DESIGN mit flächenbündigem Rahmen. Gute Wärmedämmung, sehr guter Schallschutz, Kunststoff-Alu.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="spec">Uw 0,84 W/m²K</span><span class="spec">35 dB</span><span class="spec">flächenbündig</span><span class="spec">Kunststoff-Alu</span>
+          </div>
+          <div class="mt-6"><p class="text-[11px] font-semibold uppercase tracking-[1px] text-ink-soft">Preis ab ca.</p><p class="text-[32px] font-extrabold leading-none">850 €</p><p class="text-[12px] text-ink-soft">inkl. MwSt.</p></div>
+          <a href="#preisrechner" class="btn-green mt-5">Preis berechnen <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="flex justify-center"><img src="assets/design-fenster.png" alt="DESIGN Fenster" class="max-h-[420px] w-auto object-contain drop-shadow-xl" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 12 · PREISRECHNER-BAND 2 ============ -->
+  <section class="w-full bg-orange">
+    <a href="#kontakt" class="relative block">
+      <img src="assets/preisrechner-band-bg.png" alt="" aria-hidden="true" class="h-auto w-full" />
+    </a>
+  </section>
+
+  <!-- ============ 13 · FAQ (Akkordeon) ============ -->
+  <section id="faq" class="w-full bg-panel">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="mt-2 h2">HÄUFIGE FRAGEN</h2>
+
+      <div class="mt-8 divide-y divide-line overflow-hidden rounded-card border border-line bg-white" data-accordion>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false"><span class="pr-6 text-[16px] font-bold md:text-[18px]">Was ist der Unterschied zwischen Kunststoff- und Kunststoff-Alu-Fenstern?</span><span class="acc-icon" aria-hidden="true">+</span></button>
+          <div class="acc-panel"><div class="acc-inner text-[15px] leading-[1.6] text-ink-body">Beide haben innen einen Kunststoffrahmen. Kunststoff-Alu hat außen zusätzlich eine wetterfeste Aluminium-Schale — besonders pflegeleicht und in vielen Farben (auch Metallic) erhältlich.</div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false"><span class="pr-6 text-[16px] font-bold md:text-[18px]">Welches Modell ist passivhaustauglich?</span><span class="acc-icon" aria-hidden="true">+</span></button>
+          <div class="acc-panel"><div class="acc-inner text-[15px] leading-[1.6] text-ink-body">PRO Alu ist passivhaustauglich — mit einem Uw ab 0,73 W/m²K. Auch PRO und PRO Alu Verbund erreichen sehr gute Dämmwerte. BASE ist die günstige Einstiegslinie.</div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false"><span class="pr-6 text-[16px] font-bold md:text-[18px]">Wie schnell sind die Fenster lieferbar?</span><span class="acc-icon" aria-hidden="true">+</span></button>
+          <div class="acc-panel"><div class="acc-inner text-[15px] leading-[1.6] text-ink-body">Schnell: ab 9 Tagen ab Werk. Die genaue Lieferzeit hängt von Modell, Ausführung und Auslastung ab — im Preisrechner siehst du sie direkt.</div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false"><span class="pr-6 text-[16px] font-bold md:text-[18px]">Wie lange gibt es Garantie?</span><span class="acc-icon" aria-hidden="true">+</span></button>
+          <div class="acc-panel"><div class="acc-inner text-[15px] leading-[1.6] text-ink-body">20 Jahre Garantie auf die Profile. So lange hast du Freude an deinem Fenster — ohne Kleingedrucktes.</div></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" aria-expanded="false"><span class="pr-6 text-[16px] font-bold md:text-[18px]">Kann ich die Fenster konfigurieren und Preise online berechnen?</span><span class="acc-icon" aria-hidden="true">+</span></button>
+          <div class="acc-panel"><div class="acc-inner text-[15px] leading-[1.6] text-ink-body">Ja. Mit dem REKORD-Preisrechner stellst du dein Fenster in wenigen Sekunden zusammen und bekommst sofort einen Richtpreis — ganz ohne Termin.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 14 · SHOWROOM ============ -->
+  <section id="showroom" class="w-full bg-paper">
+    <div class="container-page grid items-center gap-10 py-14 md:grid-cols-2 md:py-24">
+      <div>
+        <p class="eyebrow">PLAN DEINEN SHOWROOM-BESUCH</p>
+        <h2 class="mt-2 h2">KOMM VORBEI — FENSTER ZUM ANFASSEN</h2>
+        <p class="mt-4 max-w-[460px] text-[16px] leading-[1.5] text-ink-body">An 9 Standorten in Österreich. Finde den Schauraum in deiner Nähe — einfach PLZ eingeben.</p>
+        <form class="mt-6 flex max-w-[420px] gap-3" onsubmit="return false;">
+          <div class="flex flex-1 items-center gap-2 rounded-lg border border-stroke bg-white px-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b645c" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <input type="text" inputmode="numeric" placeholder="PLZ eingeben" class="w-full bg-transparent py-3 text-[15px] outline-none" />
+          </div>
+          <button type="submit" class="btn-orange shrink-0">Schauraum finden</button>
+        </form>
+      </div>
+      <div><img src="assets/showroom-karte.png" alt="REKORD Standorte in Österreich" class="w-full rounded-card object-contain" /></div>
+    </div>
+  </section>
+
+  <!-- ============ 15 · RATGEBER / MAGAZIN ============ -->
+  <section class="w-full bg-muted">
+    <div class="container-page py-14 md:py-24">
+      <p class="eyebrow">WEITERLESEN</p>
+      <h2 class="mt-2 h2">WISSEN DAS DEINE  ENTSCHIEDUNG LEICHTER MACHT.</h2>
+      <p class="mt-3 max-w-[640px] text-[16px] text-ink-body">Drei kurze Lesetipps, bevor du das Konfigurieren startest. Das, was im Alltag den Unterschied macht.</p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/ratgeber-artikel-1.png" alt="" class="aspect-[3/2] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-[12px] font-medium text-ink-soft">5 Min Lesezeit · REKORD Magazin</p>
+            <h3 class="mt-2 text-[18px] font-bold leading-[1.3]">Kunststoff oder Kunststoff-Alu — was passt zu dir?</h3>
+            <p class="mt-2 flex-1 text-[14px] leading-[1.5] text-ink-body">Innen ist bei beiden Kunststoff. Der Unterschied liegt außen — und der entscheidet, wie oft du in 20 Jahren putzen musst.</p>
+            <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Artikel lesen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/ratgeber-artikel-2.png" alt="" class="aspect-[3/2] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-[12px] font-medium text-ink-soft">4 Min Lesezeit · REKORD Magazin</p>
+            <h3 class="mt-2 text-[18px] font-bold leading-[1.3]">Was bringt Uw 0,73 wirklich?</h3>
+            <p class="mt-2 flex-1 text-[14px] leading-[1.5] text-ink-body">Passivhaustauglich klingt nach Werbung. Wir rechnen vor, was der Wert in einem normalen Winter an Heizkosten spart.</p>
+            <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Artikel lesen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card flex flex-col overflow-hidden">
+          <img src="assets/ratgeber-artikel-3.png" alt="" class="aspect-[3/2] w-full object-cover" />
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-[12px] font-medium text-ink-soft">3 Min Lesezeit · REKORD Magazin</p>
+            <h3 class="mt-2 text-[18px] font-bold leading-[1.3]">34 oder 39 dB — was du beim Schlafen merkst.</h3>
+            <p class="mt-2 flex-1 text-[14px] leading-[1.5] text-ink-body">5 Dezibel klingt nach wenig. Die Skala ist logarithmisch — und das ändert alles, wenn die Hauptstraße 30 Meter entfernt ist.</p>
+            <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Artikel lesen <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 16 · KONTAKT ============ -->
+  <section id="kontakt" class="w-full bg-orange text-white">
+    <div class="container-page py-14 md:py-24">
+      <div class="flex items-center gap-3 text-white/90">
+        <a href="#" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[15px] font-bold hover:bg-white/25">f</a>
+        <a href="#" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[12px] font-bold hover:bg-white/25">IG</a>
+        <a href="#" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-[13px] hover:bg-white/25">▶</a>
+      </div>
+      <p class="mt-6 text-[13px] font-bold uppercase tracking-[2px] text-white/80">Wir sind da</p>
+      <h2 class="mt-1 text-[40px] font-extrabold leading-none md:text-[56px]">Kontakt.</h2>
+      <p class="mt-3 max-w-[520px] text-[16px] text-white/90">Drei Wege zu uns — wähle den, der dir am besten passt.</p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="flex flex-col rounded-card bg-white p-6 text-ink">
+          <img src="assets/kontakt-icon-rueckruf.png" alt="" class="h-14 w-14" />
+          <h3 class="mt-4 text-[20px] font-bold">Rückruf</h3>
+          <p class="mt-2 flex-1 text-[15px] leading-[1.5] text-ink-body">Hinterlasse deine Kontaktdaten — wir rufen dich an.</p>
+          <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Rückruf anfordern <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="flex flex-col rounded-card bg-white p-6 text-ink">
+          <img src="assets/kontakt-icon-termin.png" alt="" class="h-14 w-14" />
+          <h3 class="mt-4 text-[20px] font-bold">Online oder Schauraum-Termin</h3>
+          <p class="mt-2 flex-1 text-[15px] leading-[1.5] text-ink-body">Buche einen Beratungstermin online per Video oder im Schauraum.</p>
+          <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Jetzt buchen <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="flex flex-col rounded-card bg-white p-6 text-ink">
+          <img src="assets/kontakt-icon-ansprechpartner.png" alt="" class="h-14 w-14" />
+          <h3 class="mt-4 text-[20px] font-bold">Dein Ansprechpartner</h3>
+          <p class="mt-2 flex-1 text-[15px] leading-[1.5] text-ink-body">Telefonnummer und E-Mail-Adresse des Kundenberaters in deiner Nähe.</p>
+          <a href="#" class="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-orange hover:text-orange-dark">Zu den Kontaktdaten <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 17 · FOOTER ============ -->
+  <footer class="w-full bg-ink text-footnote">
+    <div class="container-page py-16">
+      <div class="grid gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
+        <div>
+          <img src="assets/footer-logo.png" alt="REKORD" class="h-8 w-auto" />
+          <p class="mt-4 max-w-[260px] text-[14px] leading-[1.5]">Regional in Österreich produziert. 9 Standorte. 20 Jahre Garantie.</p>
+          <div class="mt-6 flex gap-3">
+            <img src="assets/footer-award-testsieger.png" alt="Test Sieger 2026" class="h-16 w-auto" />
+            <img src="assets/footer-award-leva.png" alt="LEVA Winner 25" class="h-16 w-auto" />
+          </div>
+        </div>
+        <nav class="text-[14px]"><ul class="space-y-2.5">
+          <li><a href="#" class="hover:text-white">Datenschutz</a></li>
+          <li><a href="#" class="hover:text-white">Impressum</a></li>
+          <li><a href="#" class="hover:text-white">Karriere</a></li>
+          <li><a href="#" class="hover:text-white">Partner werden</a></li>
+        </ul></nav>
+        <nav class="text-[14px]"><ul class="space-y-2.5">
+          <li><a href="#" class="hover:text-white">Downloads</a></li>
+          <li><a href="#" class="hover:text-white">20 Jahre Hersteller-Garantie</a></li>
+          <li><a href="#" class="hover:text-white">CE-Unterlagen</a></li>
+        </ul></nav>
+        <nav class="text-[14px]"><ul class="space-y-2.5">
+          <li><a href="#" class="hover:text-white">Ratgeber</a></li>
+          <li><a href="#" class="hover:text-white">Galerie</a></li>
+          <li><a href="#" class="hover:text-white">Messen</a></li>
+        </ul></nav>
+        <nav class="text-[14px]"><ul class="space-y-2.5">
+          <li><a href="#" class="hover:text-white">Standorte</a></li>
+          <li><a href="#" class="hover:text-white">Über unsere Fenster</a></li>
+          <li><a href="#" class="hover:text-white">Über unsere Leute</a></li>
+        </ul></nav>
+      </div>
+      <div class="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-[13px] sm:flex-row sm:justify-between">
+        <span>© 2026 — Rekord Franchise GmbH</span>
+        <span>Made in Austria</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

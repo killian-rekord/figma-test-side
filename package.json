@@ -1,0 +1,16 @@
+{
+  "name": "figma-test-side",
+  "version": "1.0.0",
+  "description": "REKORD Kunststoff- & Kunststoff-Alu-Fenster Landingpage (Figma-Nachbau)",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8"
+  }
+}

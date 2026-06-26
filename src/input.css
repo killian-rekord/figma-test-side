@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Inter — lokal gehostet (offline-/Pages-tauglich) */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/inter-400.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/inter-500.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/inter-600.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/inter-700.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/fonts/inter-800.woff2") format("woff2"); }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-ink bg-paper antialiased;
+  }
+}
+
+@layer components {
+  /* Zentrierter Seiten-Container — Desktop max. 1440px, mit horizontaler Polsterung */
+  .container-page {
+    @apply mx-auto w-full max-w-container px-5 md:px-[120px];
+  }
+
+  /* Button-Varianten (Figma button-Tokens) */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold uppercase tracking-[0.32px] transition-colors;
+  }
+  /* Hero-Primary: orange, rounded-8 */
+  .btn-orange {
+    @apply btn rounded-lg bg-orange px-7 py-[18px] text-[16px] text-white shadow-[0px_2px_4px_3px_rgba(0,0,0,0.18)] hover:bg-orange-dark;
+  }
+  /* Karten-CTA: grün */
+  .btn-green {
+    @apply btn rounded-lg bg-green px-6 py-3 text-[14px] text-white hover:bg-green-dark;
+  }
+  /* Sekundär: Outline */
+  .btn-ghost {
+    @apply btn rounded-lg border border-ink px-7 py-[18px] text-[16px] text-ink hover:bg-muted;
+  }
+
+  /* Pille (Hero) */
+  .pill {
+    @apply inline-flex items-center rounded-full bg-white px-[14px] py-2 text-[14px] text-ink-body shadow-card;
+  }
+
+  /* Eyebrow / Kicker-Label über Headlines */
+  .eyebrow {
+    @apply text-[14px] font-semibold uppercase tracking-[2px] text-orange;
+  }
+
+  /* Sektions-Headline H2 */
+  .h2 {
+    @apply text-[28px] font-extrabold uppercase leading-[1.1] tracking-[-0.5px] text-ink md:text-[36px];
+  }
+
+  /* Karte mit Border + Schatten */
+  .card {
+    @apply rounded-card border border-stroke bg-white shadow-card;
+  }
+
+  /* Spezifikations-Chip (Uw, dB ...) */
+  .spec {
+    @apply inline-flex items-center gap-1 rounded-lg bg-neutral2 px-3 py-2 text-[13px] font-medium text-ink;
+  }
+
+  /* ---------- Akkordeon ---------- */
+  .acc-trigger {
+    @apply flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-ink transition-colors hover:bg-muted/60 md:px-7;
+  }
+  .acc-icon {
+    @apply flex h-7 w-7 shrink-0 items-center justify-center text-[28px] font-light leading-none text-ink-soft transition-transform duration-300;
+  }
+  .acc-trigger[aria-expanded="true"] .acc-icon {
+    @apply rotate-45;
+  }
+  /* Panel: per max-height animiert, default zu */
+  .acc-panel {
+    @apply grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out;
+  }
+  .acc-trigger[aria-expanded="true"] + .acc-panel {
+    @apply grid-rows-[1fr];
+  }
+  .acc-panel > .acc-inner {
+    @apply overflow-hidden px-5 md:px-7;
+  }
+  .acc-trigger[aria-expanded="true"] + .acc-panel > .acc-inner {
+    @apply pb-6;
+  }
+}
